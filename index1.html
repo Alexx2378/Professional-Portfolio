@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Professional Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/logo1.png/icon">
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap'>
+    <link href='https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500&family=Kanit:wght@300;400&display=swap'>
+    <link href='https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Farro:wght@300;400;500&family=Kanit:wght@300;400&display=swap'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />     
+
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 1800px;
+} 
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(#00b0ba, #993dfb);
+        position:sticky;
+        height: 54px;
+        width: 100%;
+        font-family: 'Poppins';
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 100;
+}   .navbar a {
+        display: inline-block;
+        justify-content: space-between;
+        text-align: center;
+        text-emphasis: none;
+        font-family: 'Poppins';
+        font-size: 17px;
+        font-weight: 500;
+        position: sticky;
+        margin: 5px 3px 3px 5px;
+        position: sticky;
+        color: white;
+
+}
+    .navbar a:hover{
+       background-color: #01182b;
+       background-size: 15px;
+       padding-left: 5px;
+       padding-right: 5px;
+       border: none;
+       border-radius:25px;
+       justify-item: center;
+       font-weight: 500;
+       color: white;
+       box-shadow:  0px 15px 20px #3ce0e9;
+       transform:translate(-5px, -5px);
+}
+    .logo{
+        display: flex;
+       width: 87px;
+       height: 73px;
+       border-radius: 56px;
+       justify-item: center;
+       padding: 10px;
+       cursor: pointer; 
+       object-position: center;
+       margin-left: 80px;
+       margin-top: 3px;
+
+}
+    .logo:hover{
+        cursor: pointer;
+        transform: translate(-5px, -10px);
+    }
+}
+    #home{
+       display: flex;
+       background-color: #01182b;
+       flex-direction: column;
+       width: 100%;
+       height: 840px;
+       justify-content: absolute;
+       align-items: left;
+}
+    #home::before{
+        content:"";
+        position:absolute ;
+        top: 0;
+        right: 0;
+        background:url('background.gif') no-repeat center ;
+        background-size: contain;
+        background-position: center
+        height: 880px;
+        width:100%;
+        z-index: -1;
+        justify-content: space-between;
+
+}
+    .main{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        Justify-content:space-between;
+        align-text: left;
+        font-family: poppins;
+        position: absolute;
+        top: 33%;
+        left: 10%;
+        max-width: 600px;
+}
+    .profile{
+        overflow: hidden;
+        justify-content: right;
+        align-item: right;
+        margin-top: 110px;
+        margin-left: 800px;
+        width: 380px;
+        height: 385px;
+        border-radius: 50%;
+        background: linear-gradient(#00b0ba, #993dfb);
+        transition: 0.5s ease;
+        padding: 9px;
+        cursor: pointer;
+}  
+    .profile:hover{
+        Transform: scale(1.3);
+        box-shadow:  0px 15px 60px #8f42d6;
+        transform: translate(-5px, -10px);
+}
+   .main h1{
+        font-family: 'chakra petch';
+        font-size: 55px;
+        font-weight: 700;
+        color:White ;
+        padding-top: 20px;
+        transition: 0.5s ease;
+
+}
+    .main h1:hover{
+        cursor: pointer;
+        transform:translate(-5px, -10px);
+}
+    .main h3{
+        font-size: 26px;
+        font-weight:650;
+        color: white;
+        line-height: 1;
+        transition: 0.5s ease;
+}   
+    .main h3:hover{
+        cursor: pointer;
+        color: #dda6f0; 
+        transform: translate(-5px, -10px);
+
+}   .main p{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0 40px;
+        background: linear-gradient(#dda6f0,#1e3669);
+        border: none;
+        border-radius: 30px;
+        padding: 17px;
+        line-height: 1;
+        color: white;
+        width: 80%;
+        transition: 0.5s ease;
+}
+    .main p:hover{
+        cursor: pointer;
+        box-shadow: 0 10px 50px #68f0de;
+        transform: translate(-5px, -10px);
+}
+    .headings{
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        text-align: left;
+        margin: 40px 0 px;
+}
+    .btn{
+        padding: 15px ;
+        background: linear-gradient(#00b0ba, #993dfb);
+        align-items: center;
+        width: 20%;
+        margin: 15px;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight 500;
+        color: white;
+        outline: none;
+        transition: 0.5s ease;
+}
+    .btn:hover {
+        cursor: pointer;
+        background: transparent;
+        color:#68f0de ;
+        border: solid #68f0de;
+        box-shadow: 0 10px 35px #68f0de;
+        transform: translate(-5px, -10px);
+}
+    #about {
+        display: flex;
+        justify-content: center;
+        item-align:center;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #01182b;
+        padding: 25px;
+        height: 700px;
+        width:100%;
+}
+    #about h1{
+        text-align: center;
+        color: white;
+        font-size: 55px;
+        font-weight: 610;
+        font-family: 'chakra petch';
+        padding-top: 10px;
+        cursor: pointer;
+}
+    #pic {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+}
+    #pic img{
+       width: 470px;
+       height: 400px;
+       display: flex;
+       justify-item: right;
+       padding: 10px;
+       cursor: pointer;
+       border-radius: 30%;
+       background: linear-gradient(#00b0ba, #993dfb);
+       transition: 0.5s ease;
+       padding: 9px;
+       cursor: pointer;
+       margin-left: 20px;
+}  
+    #pic img:hover{
+       box-shadow:  0px 15px 60px #84b6e3;
+       transform: translate(-5px, -10px);
+}
+    #intro {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       padding: 35px;
+}
+    #intro h2{
+       justify-content: space-between;
+       justify-item: right;
+       text-weight: 30px;
+       text-align: left;
+       padding: 5px;
+       font-family:'Poppins', sans-serif;
+       font-size: 30px;
+       color:  #3dd3db;
+       margin-bottom: 10px;
+       line-height: 1;
+       height: 40px;
+       width: 60%;
+} 
+    #intro p{
+        background-color: #b1edf0;
+       justify-content: right;
+       text-align: center;
+       padding: 7px 9px 12px 9px;
+       font-family: 'poppins', san serif;
+       font-size: 18px;
+       font-weight: 500px;
+       border-radius: 10px;
+       color: black;
+       margin-left: 20px;
+       margin-right: 5px;
+       margin-top: 15px;
+       margin-bottom: 10px;
+       width: 85%;
+       line-height: 1.2;
+       transition: 0.5s ease;
+}
+    #intro p:hover{
+        cursor: pointer;
+        color: #1f156b;
+        transform:translate(-10px, -10px);
+
+}        
+    #services{
+       background-color: ;
+       display: flex;
+       flex-direction: column;
+       justify-items: center;
+       padding: 29px;
+       background-color: #01182b;
+       height: 650px;
+       width:100%;
+
+}
+    #services h1{ 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        text-align: center;
+        color: white;
+        font-size: 55px;
+        font-weight: 610;
+        font-family: 'chakra petch';
+        padding-top: 17px;
+        cursor: pointer;
+} 
+    #services h1:hover{
+        color:#00f9ff;
+}   
+    #services h2{
+        justify-content: center;
+        font-style: 'Poppins', sans-serif;
+        text-align: center;
+        color: black;
+        font-size: 29px;
+        font-weight: 610; 
+}  
+    #services h2:hover{
+        color: #1f156b;   
+}
+    .row{
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       box-sizing: border-box;
+}
+    .box{
+       display: flex;
+       flex-direction: column;
+       width: 360px;
+       height: 420px;
+       border: 1px solid black;
+       margin: 10px 10px 5px 10px;
+       font-size: 15px;
+       font-family: 'chakra petch', sans-serif;
+       justify-items: center;
+       align-items: center;
+       cursor: pointer; 
+       padding: 20px;
+       border-radius: 15px;
+       background-color: #b1edf0;
+       background-size: 100% 200%;
+       line-height: 1.4;
+       margin-top: 15px 10px 5px 10px;
+       transition: 0.5s ease;
+}
+    .box:hover{
+        background-color: #84d5e3;
+        Transform: scale(1.3);
+        box-shadow:  0px 15px 60px #8f42d6;
+        transform: translate(-5px, -10px);
+
+             
+}
+    .box img{
+        width: 75px;
+        height: 75px;
+        background: linear-gradient(#00b0ba, #993dfb);
+        border-radius: 29%;
+        padding: 8px;
+}  
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #01182b;
+        font-family: 'poppins',sans-serif;
+        font-weight: 400;
+        color: white;
+        padding: 58px;
+        height: 670px;
+        width:100%;
+}
+    #contact h1{
+        text-align: left;
+        color: White;
+        font-size: 60px;
+        font-weight: 633;
+        font-family: 'chakra petch';
+        padding-top: 10px;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 30px;
+}
+    .contact-left{
+        flex-basis: 35%;
+}
+    .contact-right{
+        flex-basis: 60%;
+}
+    .contact-left p{
+        margin-top: 30px ;
+        margin-left: 30px;
+        font-size: 20px;
+}
+    .contact-left p i{
+        color: #3dd3db;
+        margin-top: 10px;
+        margin-right: 15px;
+        margin-left: 30px;
+        font-size: 19px;
+}
+    .social-icons{
+        margin-top: 30px;
+        margin-left: 30px;
+}
+    .social-icons a{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decorations: none;
+        margin: 30px 15px 30px 25px;
+        font-size: 28px;
+        color: #3dd3db;
+        transition: 0.5s ease;
+        background: transparent;
+        border: 2px solid #3dd3db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 23px;
+}
+    .social-icons a:hover{
+        background: #3dd3db;
+        color:#01182b;
+        box-shadow:  0 0 20px #3dd3db;
+        
+}
+    .contact-right form{
+        margin-top: 170px;
+        width: 90%;
+        height: 50%;
+}    
+    .form input, form textarea{
+        width: 90%;
+        border:0;
+        outline: none;
+        background: white;
+        padding: 15px;
+        margin-top: 12px;
+        margin-right: 14px;
+        color: black;
+        font-size: 18px;
+        border-radius: 16px;
+}
+    .input{
+        width: 90%;
+        border:0;
+        outline: none;
+        background: white;
+        padding: 14px;
+        color: black;
+        font-size: 18px;
+        border-radius: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+}
+    .form btn2{
+        background-image: linear-gradient(#21ebdb, #e849ff, #fff63f) ;
+        padding: 19px;
+        font-family: 'chakra petch';
+        color: solid black;
+        width: 9%;
+        margin: 15px;
+        border-radius: 38px;
+        border: none;
+        outline: none;
+        transition: 0.5s ease;
+}
+    .form btn2:hover{
+        cursor: pointer;
+        box-shadow: 0px 15px 60px #e0ff37;
+        transform:translate(-10px, -10px);
+}
+
+</style>
+
+<body>
+
+    <header class="navbar">
+        <img src="logo1.png" class="logo">
+        <ul>
+           <li><a href="#home" class="active"> HOME </a></li>
+           <li><a href="#about" class="active"> ABOUT ME </a></li>
+           <li><a href="#services" class="active"> SERVICES </a></li>
+           <li><a href="#contact" class="active"> CONTACT </a></li>
+        </ul>
+    </header>
+
+
+    <section id="home">
+        <img src="myprofile1.jpg" class="profile">
+        <div class="main">
+            <h1 class="headings"> Hi There, I'm <span> Alexandra!</span></h1>
+            <h3> Web Designer/ Web Developer</h3>
+            <p>Are you looking for a designer that would elevate your business website from ordinary to extraordinary?  </p>
+                   
+            <button class="btn">Hire Me </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">
+        <img src="https://i.pinimg.com/750x/79/61/bc/7961bc8a4dace2e86744e4a69ec92cba.jpg" alt="">
+            <div id="intro">
+                <h2>FORMENTERA, ALEXANDRA S.</h2>
+                <p><br> I am Alexandra S. Formentera, a dynamic web designer and developer from San Francisco, Camotes Islands, Cebu, Philippines. A dedicated first year student taking up a Bachelor of Science in Information Technology at the University of Cebu-Main Campus, Cebu City. I have embarked on an exciting journey in the world of web design, with two months of experience under my belt.</br></p>
+
+               <p><br> My ambition is to transform your business's digital presence from ordinary into something extraordinary. I have a background in Web Designing with creative designs and animations that will make your website more appealing.</br></p>
+            </div>
+        </section>
+
+
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="icon 1.png" alt="">
+                <h2 class="heading"> Website Design</h2>
+                <p> Despite my relatively short two-month journey into web design, my strong background in the field sets me apart as a responsive designer with a unique vision. I specialize in crafting web animations, futuristic aesthetics, and minimalist designs that will redefine your online presence. I'm here to elevate the beauty and functionality of your business website, infusing it with innovation and style. To create a website that's not only visually captivating but also on the cutting edge of modern design trends.  </p>
+            </div>
+            
+            <div class="box">
+                <img src="icon 2.png" alt="">
+                <h2 class="heading"> Digital Marketing</h2>
+                <p> I also equipped in hands-on experience in managing Facebook & Instagram pages and creating engaging posts for businesses. With a track record of strategic content planning and audience engagement,I understand the pulse of social media marketing. I'm well-versed in the digital marketing landscape whether curating compellings, optimizing ad campaigns and more. My goal is to leverage this expertise to drive your online presence to new level, amplifying your brand's voice and expanding your reach.</p>
+            </div>
+
+            <div class="box">
+                <img src="videoedit.png" alt="">
+                <h2 class="heading"> Video Editing</h2>
+                <p> Elevate your brand's visual storytelling with my professional video editing expertise. With a year of dedicated learning Capcut, VS, adobelightroom and a proven track record, I've successfully crafted video presentations, consistently receiving praise for my early deliveries and exceptional quality. I offer a versatile approach to video editing, capable of creating aesthetics. Collaborate with me to transform your raw footage into a captivating narrative, whether you desire a minimalist, retro, or any other creative style.  </p>
+            </div>
+    </section>
+
+   <footer id="contact">
+      <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+               <p>Reach Out and Connect with Ease.</p>
+               <p><i class="fa-solid fa-paper-plane"></i>formenteralexandra@gmail.com</p></i>
+               <p><i class="fa-solid fa-phone"></i>09567403573</p></i>
+               <div class="social-icons">
+                  <a href="https://www.facebook.com/alexa.formentera.5?mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-bounce"> </i></a>
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Falexa.formentera.5%3Ffbclid%3DIwAR1Po5chxp5SWcMJ6dJf4zNv8kk5P5u6ReQTweA0GHNOm-6fxANC368Up9E&h=AT34L7KjLa6m07uV7ztMhUs8WlbW2cN2rB81FRe5IgOIli8UkxaEzi4wGXhLLPmMWiiSxDtxbU0UlY9bUgIIF4NpN45MGcA1XgsfPDHV3QHjaQk6WcMlBoNDZeQjiSiTetfoBw"><i class="fa-brands fa-facebook-messenger fa-bounce"> </i></a>
+                  <a href="https://www.instagram.com/alexx_acorn/?igshid=MzNlNGNkZWQ4Mg%3D%3D&fbclid=IwAR2QH5_D4C0DdvGLguybcQtS6KOE8bPYu6sJ3yVWZDv0Ilw58vlqp1S8A64"><i class="fa-brands fa-square-instagram fa-bounce "></i></a>
+                  
+        <a href="https://maps.app.goo.gl/bySZoYsANbpszrUc6"><i class="fa-solid fa-location-dot fa-bounce"></i></a>
+         </div>
+        </div>
+        <div class="contact-right">
+           <form>
+                <input type="text" name="Name" class="input" placeholder="Enter Your Name" required>
+                <input type="email" name="email" class="input" placeholder="Enter Your Email" required>
+                <textarea name="Message" id="msg" rows="6"  placeholder="Enter Your Message" required> </textarea>
+                <button type="send" class="btn btn2">Send</button>
+            </form>
+        </div>       
+</footer>
+
+
+    
+</body>
+</html>
